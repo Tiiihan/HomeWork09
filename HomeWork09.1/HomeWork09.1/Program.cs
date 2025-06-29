@@ -13,9 +13,7 @@ for (int i = 0; i < LENGTH; i++)
 {
 	arr[i] = random.Next(MIN, MAX);
 	Console.Write(arr[i] + "\t");
-}
 
-for (int i = 0; i < LENGTH; i++)
 	if (arr[i] > maxNumber)
 	{
 		secondMxNumber = maxNumber;
@@ -23,5 +21,6 @@ for (int i = 0; i < LENGTH; i++)
 	}
 	else if (arr[i] > secondMxNumber && arr[i] != maxNumber)
 		secondMxNumber = arr[i];
+}
 
 Console.WriteLine($"\n\nMax number: {maxNumber}\n\nSecond max number: {secondMxNumber}");
